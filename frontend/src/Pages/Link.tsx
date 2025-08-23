@@ -6,7 +6,6 @@ import { Card, CardAction, CardContent, CardDescription, CardFooter, CardHeader,
 import { Link2Icon, Trash2 } from "lucide-react";
 import { toast } from "react-toastify";
 
-
 interface ContentItem {
   
   title1: string;
@@ -126,7 +125,7 @@ function LinkCardComponent({title1, title2, link, type, id, createdAt}:CardProps
 
   async function handleDelete(){
       const token = localStorage.getItem("token")
-    const res = await axios.delete(`http://localhost:3000/api/v1/links/${id}`,{
+    const res = await axios.delete(`${API_URL}/links/${id}`,{
       headers:{
         token
       }
