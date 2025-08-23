@@ -1,0 +1,15 @@
+# Ignore irrelevant/config files from language stats
+*.lock linguist-vendored
+*.json linguist-vendored
+*.yml linguist-vendored
+*.yaml linguist-vendored
+*.env.example linguist-vendored
+*.md linguist-vendored
+*.gitignore linguist-vendored
+*.hintrc linguist-vendored
+
+# Force language detection for project
+backend/**/*.ts linguist-language=TypeScript
+backend/**/*.tsx linguist-language=TypeScript
+frontend/**/*.ts linguist-language=TypeScript
+frontend/**/*.tsx linguist-language=TypeScript
