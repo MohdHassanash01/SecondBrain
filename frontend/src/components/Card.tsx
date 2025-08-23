@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
+const API_URL = import.meta.env.VITE_BACKEND_API_URL
 
 interface Tag {
   title: string;
@@ -48,7 +49,7 @@ useEffect(() => {
 async function deleteData(){
 
   const token = localStorage.getItem("token")
-    const res = await axios.delete(`http://localhost:3000/api/v1/content/${id}`,{
+    const res = await axios.delete(`${API_URL}/content/${id}`,{
       headers:{
         token
       }
