@@ -26,7 +26,7 @@ import { UseLogin } from "../Context/LoginContext"
 export function AppSidebar() {
 
   const navigate = useNavigate()
-   const { isLoggedIn, logout } = UseLogin();
+   const {  logout } = UseLogin();
    
         const [currentTab, setCurrentTab] = useState("Home")
 

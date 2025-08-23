@@ -1,7 +1,8 @@
 import { Link, useNavigate } from "react-router-dom";
 import { UseLogin } from "../Context/LoginContext";
 import { ModeToggle } from "./mode-toggle";
-import { Button } from "./ui/Button";
+import { Button } from "./ui/button";
+
 
 export default function Navbar() {
     const navigate = useNavigate();
