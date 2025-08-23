@@ -43,7 +43,7 @@ try {
 
         res.json({
          message:"share is enabled",   
-         link:`http://localhost:5173/share/${link.hash}`
+         link:`https://secondbrain-1-mbt9.onrender.com/share/${link.hash}`
         
          })
     
